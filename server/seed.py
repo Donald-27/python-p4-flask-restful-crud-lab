@@ -3,9 +3,7 @@
 from app import app
 from models import db, Plant
 
-
 with app.app_context():
-
     Plant.query.delete()
 
     aloe = Plant(
